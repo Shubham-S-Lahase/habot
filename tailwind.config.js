@@ -9,6 +9,9 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero': "url('/public/herobg.jpg')",
+      }
     },
   },
   plugins: [],
