@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SignupWithHabot from "./components/SignupWithHabot";
 import VideoBuyer from "./components/VideoBuyer";
+import GetVerified from "./components/GetVerified";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Hero />
           <SignupWithHabot/>
           <VideoBuyer/>
+          <GetVerified/>
         </main>
       </div>
     </Router>
