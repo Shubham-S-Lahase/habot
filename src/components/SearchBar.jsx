@@ -7,6 +7,8 @@ const SearchBar = ({ iconPath, placeholderText }) => {
       style={{
         padding: "10px 18px 6px 19px",
       }}
+      role="search"
+      aria-labelledby="search-bar-label"
     >
       <img
         src={iconPath}
@@ -16,10 +18,10 @@ const SearchBar = ({ iconPath, placeholderText }) => {
       <input
         type="text"
         placeholder={placeholderText}
+        aria-label={placeholderText}
         className="bg-transparent w-full outline-none text-gray-500 text-[15.13px] font-light font-poppins leading-[22.69px] placeholder-gray-500"
         style={{
           textAlign: "left",
-        //   textDecoration: "underline from-font",
           textUnderlinePosition: "under",
         }}
       />

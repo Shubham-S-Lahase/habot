@@ -14,7 +14,11 @@ const GetVerified = () => {
         </h1>
 
         {/* Button */}
-        <button className="w-full md:w-[216px] h-[54px] bg-[#EB7150] rounded-[5px] text-[#FFFFFF] font-poppins font-bold text-[16px] sm:text-[18px] text-center">
+        <button
+          aria-labelledby="main-heading"
+          aria-label="Get Verified"
+          className="w-full md:w-[216px] h-[54px] bg-[#EB7150] rounded-[5px] text-[#FFFFFF] font-poppins font-bold text-[16px] sm:text-[18px] text-center"
+        >
           Get Verified
         </button>
       </div>

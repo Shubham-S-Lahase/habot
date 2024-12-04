@@ -32,13 +32,14 @@ const VideoBuyer = () => {
             title="Introduction to Buyer and Supplier Platform"
             frameBorder="0"
             allowFullScreen
+            aria-label="Introduction to Buyer and Supplier Platform Video"
           ></iframe>
         </div>
 
         {/* Tabs and Content Section */}
-        <div className="flex flex-col w-full md:w-[48%] h-[250px] sm:h-[300px] md:h-[350px]  gap-6">
+        <div className="flex flex-col w-full md:w-[48%] h-[250px] sm:h-[300px] md:h-[350px] gap-6">
           {/* Tabs */}
-          <div className="flex gap-8 w-full">
+          <div className="flex gap-8 w-full" role="tablist">
             {["Buyer", "Supplier"].map((tab) => (
               <div
                 key={tab}
@@ -48,7 +49,8 @@ const VideoBuyer = () => {
                 onClick={() => handleTabClick(tab)}
                 role="tab"
                 aria-selected={activeTab === tab}
-                aria-label={tab}
+                aria-controls={`${tab.toLowerCase()}-panel`}
+                id={`${tab.toLowerCase()}-tab`}
               >
                 <span className="font-poppins text-[20px] sm:text-[24px] md:text-[26px] font-bold leading-[28px] sm:leading-[30px] md:leading-[32px] transition-all">
                   {tab}
@@ -65,7 +67,8 @@ const VideoBuyer = () => {
             <ul
               className="flex flex-col gap-4"
               role="tabpanel"
-              aria-labelledby={activeTab}
+              id={`${activeTab.toLowerCase()}-panel`}
+              aria-labelledby={`${activeTab.toLowerCase()}-tab`}
             >
               {content[activeTab].map((item, index) => (
                 <li

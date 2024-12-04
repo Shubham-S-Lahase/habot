@@ -18,14 +18,25 @@ const SignupWithHabot = () => {
   ];
 
   return (
-    <div className="container w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 md:py-20 px-4">
+    <div
+      className="container w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 md:py-20 px-4"
+      role="main"
+      aria-labelledby="main-heading"
+    >
       {/* Left Section */}
       <div className="flex flex-col gap-6 md:gap-6 lg:gap-8 xl:gap-12 w-[100%] md:w-[48%] items-center md:items-start">
-        <h1 className="font-poppins text-[20px] md:text-[25px] lg:text-[28px] xl:text-[37.34px] font-bold text-[#000000]">
+        <h1
+          id="main-heading"
+          className="font-poppins text-[20px] md:text-[25px] lg:text-[28px] xl:text-[37.34px] font-bold text-[#000000]"
+          aria-label="Ready to dive into HABOT?"
+        >
           Ready to dive into <span className="text-[#271555]">HABOT?</span>
         </h1>
 
-        <p className="font-poppins md:text-[14px] lg:text-[16px] xl:text-[18px] font-light text-[#000000] text-center md:text-left">
+        <p
+          className="font-poppins md:text-[14px] lg:text-[16px] xl:text-[18px] font-light text-[#000000] text-center md:text-left"
+          aria-labelledby="main-heading"
+        >
           Signing up with HABOT opens the door to a world of new opportunities
           and potential for business growth. Gain access to a vibrant community
           of like-minded individuals, unlock valuable resources, and take the
@@ -40,7 +51,7 @@ const SignupWithHabot = () => {
           aria-label="Sign up today"
         >
           Sign up Today!
-          <img src="/suarrow.svg" alt="Arrow icon" />
+          <img src="/suarrow.svg" alt="Right Arrow icon" />
         </button>
       </div>
 
@@ -51,9 +62,9 @@ const SignupWithHabot = () => {
             key={index}
             className="bg-white border border-[#E7760D] rounded-[5px] w-full h-[70px] lg:h-[60px] flex items-center justify-center"
             role="region"
-            aria-label={location}
+            aria-labelledby={`location-${index}`}
           >
-            <p className="font-bold text-[16px] md:text-[18px]">{location}</p>
+            <p id={`location-${index}`} className="font-bold text-[16px] md:text-[18px]">{location}</p>
           </div>
         ))}
       </div>

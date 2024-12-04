@@ -32,10 +32,10 @@ const Header = () => {
     <header className="bg-white w-full fixed top-0 left-0 shadow-[0px_9px_26px_0px_#7373731A] z-50">
       <div className="container mx-auto flex items-center justify-between h-[86px] px-4">
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/" aria-label="Go to homepage">
             <img
               src="/logo.svg"
-              alt="HABOT"
+              alt="HABOT Logo"
               className="h-8 md:h-10 lg:h-12 transition-all"
             />
           </Link>
@@ -44,6 +44,7 @@ const Header = () => {
           <Link
             to="/suppliers"
             className="text-gray-600 hover:text-gray-900 font-poppins text-sm md:text-[15.25px] font-normal leading-[24px] transition-all"
+            aria-label="Find Suppliers"
           >
             Find Suppliers
           </Link>
@@ -53,7 +54,7 @@ const Header = () => {
             items={serviceTags}
             onItemClick={handleDropdownItemClick}
           />
-          <button className="border border-[#00732F] rounded-[5px] w-[195px] h-[50px] font-inter text-sm md:text-[15px] font-bold leading-[24px] text-[#00732F] text-center hover:bg-[#00732F] hover:border-[#00732F] hover:text-[#FFFFFF] active:bg-[#005624] transition-all">
+          <button className="border border-[#00732F] rounded-[5px] w-[195px] h-[50px] font-inter text-sm md:text-[15px] font-bold leading-[24px] text-[#00732F] text-center hover:bg-[#00732F] hover:border-[#00732F] hover:text-[#FFFFFF] active:bg-[#005624] transition-all" aria-label="Login or Sign Up">
             Login / Sign Up
           </button>
         </div>
@@ -61,7 +62,7 @@ const Header = () => {
           <button onClick={toggleMobileMenu} aria-label="Toggle Menu">
             <img
               src={mobileMenuOpen ? "/close.svg" : "/hamburger.svg"}
-              alt="Menu Icon"
+              alt="Menu Icon and Close Icon"
               className="h-6 w-6"
             />
           </button>
@@ -74,6 +75,7 @@ const Header = () => {
               to="/suppliers"
               className="text-gray-600 hover:text-gray-900 font-poppins text-sm font-normal transition-all"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Find Suppliers"
             >
               Find Suppliers
             </Link>
@@ -83,7 +85,7 @@ const Header = () => {
               items={serviceTags}
               onItemClick={handleDropdownItemClick}
             />
-            <button className="border border-[#00732F] rounded-[5px] w-full py-2 font-inter text-sm font-bold leading-[24px] text-[#00732F] text-center hover:bg-[#00732F] hover:border-[#00732F] hover:text-[#FFFFFF] active:bg-[#005624] transition-all">
+            <button className="border border-[#00732F] rounded-[5px] w-full py-2 font-inter text-sm font-bold leading-[24px] text-[#00732F] text-center hover:bg-[#00732F] hover:border-[#00732F] hover:text-[#FFFFFF] active:bg-[#005624] transition-all" aria-label="Login or Sign Up">
               Login / Sign Up
             </button>
           </div>

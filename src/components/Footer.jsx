@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#123557] bg-cover w-full flex flex-col items-center justify-center py-16 md:py-12 my-16 md:my-20">
+    <div className="bg-[#123557] bg-cover w-full flex flex-col items-center justify-center py-16 md:py-12 mt-16 md:mt-20">
       <div className="container flex flex-col md:flex-row items-center md:justify-between border-y border-[#FFFFFF33] py-8">
         {/* Left Section */}
         <div className="flex flex-col w-full md:w-[65%] md:flex-row items-center md:items-start gap-10 md:gap-12 lg:gap-20">
           {/* Logo and Copyright */}
           <div className="flex flex-col items-center md:items-start gap-2">
-            <img src="/flogo.svg" alt="Logo" />
+            <img src="/flogo.svg" alt="Logo For the Footer" />
             <span className="text-[#FFFFFF] font-light text-sm sm:text-lg md:text-base">
               © R Singhania
             </span>
@@ -46,22 +46,22 @@ const Footer = () => {
           <img
             className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
             src="/Linkedin.svg"
-            alt="LinkedIn"
+            alt="LinkedIn Icon"
           />
           <img
             className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
             src="/Twitter.svg"
-            alt="Twitter"
+            alt="Twitter Icon"
           />
           <img
             className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
             src="/Facebook.svg"
-            alt="Facebook"
+            alt="Facebook Icon"
           />
           <img
             className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
             src="/Instagram.svg"
-            alt="Instagram"
+            alt="Instagram Icon"
           />
         </div>
       </div>

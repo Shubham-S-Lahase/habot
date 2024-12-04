@@ -8,7 +8,7 @@ const Step = ({ icon, title, bgColor }) => {
     >
       <div className="flex justify-center mb-2">
         <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200 flex items-center justify-center">
-          <img src={icon} alt="" className="w-6 h-6 sm:w-8 sm:h-8" />
+          <img src={icon} alt={icon} className="w-6 h-6 sm:w-8 sm:h-8" />
         </div>
       </div>
       <h3 className="text-sm sm:text-base font-medium mb-1 text-center">
