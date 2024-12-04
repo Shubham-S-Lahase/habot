@@ -5,6 +5,7 @@ import SignupWithHabot from "./components/SignupWithHabot";
 import VideoBuyer from "./components/VideoBuyer";
 import GetVerified from "./components/GetVerified";
 import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <VideoBuyer/>
           <GetVerified/>
           <HowItWorks/>
+          <Footer/>
         </main>
       </div>
     </Router>
