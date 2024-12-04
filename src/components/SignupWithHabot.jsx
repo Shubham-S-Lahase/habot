@@ -18,7 +18,7 @@ const SignupWithHabot = () => {
   ];
 
   return (
-    <div className="container w-full mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-12 md:py-20">
+    <div className="container w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 md:py-20 px-4">
       {/* Left Section */}
       <div className="flex flex-col gap-6 md:gap-6 lg:gap-8 xl:gap-12 w-[100%] md:w-[48%] items-center md:items-start">
         <h1 className="font-poppins text-[20px] md:text-[25px] lg:text-[28px] xl:text-[37.34px] font-bold text-[#000000]">

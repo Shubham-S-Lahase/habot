@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import SignupWithHabot from "./components/SignupWithHabot";
 import VideoBuyer from "./components/VideoBuyer";
 import GetVerified from "./components/GetVerified";
+import HowItWorks from "./components/HowItWorks";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <SignupWithHabot/>
           <VideoBuyer/>
           <GetVerified/>
+          <HowItWorks/>
         </main>
       </div>
     </Router>
