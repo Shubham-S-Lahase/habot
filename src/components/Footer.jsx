@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="flex flex-wrap gap-4 mt-8 md:mt-0 justify-center md:justify-start">
           <img
             className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
-            src="/Linkedin.svg"
+            src="/LinkedIn.svg"
             alt="LinkedIn Icon"
           />
           <img
